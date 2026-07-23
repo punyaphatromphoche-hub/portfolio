@@ -1,57 +1,76 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
 }
 
-.menu{
+.logo img {
+    width: 60px;
+    height: auto;
+    display: block;     
+}
+
+.menu {
     display: flex;
     list-style: none;
 }
 
-.menu li{
-    margin-left: 10px;
+.menu li {
+    margin-left: 15px;
 }
 
-.menu li a{
+.menu li a {
     text-decoration: none;
-    color: rgb(99, 199, 161);
+    color: rgb(99, 142, 199);
 }
 
-section.banner{
-    background-color: rgb(230, 89, 117);
-    height: 400px;
+section.banner {
+    background-color: rgb(178, 89, 230);
+    padding: 30px 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-main{
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr;
+.banner-info img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-main div{
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
     padding: 20px;
-    justify-content: center;
+}
+
+main div {
+    padding: 10px;
     text-align: center;
 }
 
-main div img{
-    width: auto;
-    height: 200px;
+main div img {
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
-footer{
-    background-color: rgb(139, 232, 255);
-    color: #ec89c6;
+footer {
+    background-color: rgb(230, 255, 139);
+    color: #db89ec;
     text-align: center;
     padding: 10px;
 }
